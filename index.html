@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Geladeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Geladeira</h1>
+    </header>
+    <section>
+        <div>
+            O que você deseja adicionar na geladeira?<br>
+            <select id="produtos">
+                <option value="leite">Leite</option>
+                <option value="ovos">Ovos</option>
+                <option value="iogurte">Iogurte</option>
+                <option value="queijomuçarela">Queijo muçarela</option>
+                <option value="queijofresco">Queijo fresco</option>
+                <option value="presunto">Presunto</option>
+                <option value="carnebovina">Carne bovina</option>
+                <option value="carnesuina">Carne suína</option>
+                <option value="peixe">Peixe</option>
+                <option value="frango">Frango</option>
+                <option value="manteiga">Manteiga</option>
+                <option value="molhodetomate">Molho de tomate</option>
+                <option value="alface">Alface</option>
+                <option value="tomate">Tomate</option>
+                <option value="cenoura">Cenoura</option>
+                <option value="sobras">Sobras</option>
+                <option value="morango">Morango</option>
+                <option value="uva">Uva</option>
+                <option value="maça">Maçã</option>
+                <option value="bolo">Bolo</option>
+                <option value="suconatural">Suco natural</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            Há quantos dias isso foi colocado na geladeira?<br>     
+            <input type="number" id="tempo" value="1" min="0"><br>Registrar ítem:
+            <button onclick="adicionar()">Adicionar</button>      
+        </div>
+    </section>
+    <section id="resultado">
+        <div id="res1">
+            <h3>Produtos armazenados:</h3>
+        </div>
+        <div id="res2">
+            <h3>Produtos vencidos:</h3>
+        </div>
+    </section>
+    <div>
+        <h4 id="contador"></h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
